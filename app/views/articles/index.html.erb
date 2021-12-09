@@ -1,0 +1,147 @@
+<!--
+<html>
+<head>
+<style>
+div.a {
+  text-align: center;
+}
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+table{
+  background-color:#F0F8FF;
+}
+th{
+   background-color:#F0F8FF;
+   padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+td{
+   background-color:#808080;
+   padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  font-size: 15px;
+
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+<h1>Lista de cadastro</h1>
+</body>
+</div>
+ <table class="center">
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+  </tr>
+  <tr>
+    <td> <%= @nomeArray[0]%></td>
+    <td> <%= @idadeArray[0]%></td>
+  <tr>
+    <td><%= @nomeArray[1]%></td>
+    <td><%= @idadeArray[1]%></td>
+    <tr>
+    <td><%= @nomeArray[2]%></td>
+    <td><%= @idadeArray[2]%></td>
+    <tr>
+    <td><%= @nomeArray[3]%></td>
+    <td><%= @idadeArray[3]%></td>
+    <tr>
+    <td><%= @nomeArray[4]%></td>
+    <td><%= @idadeArray[4]%></td> 
+    
+  
+</table> 
+
+</html>
+</!-->
+<html lang="pt">
+<head>
+  <title>Lista de cadastros</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+  background-color: rgba(67, 112, 112);
+}
+</style>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="http://127.0.0.1:3000/inicio">Inicio</a>
+      </li>   
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container mt-3">
+  <h2>Lista de cadastros</h2>
+  <table class="table table-info table-striped">
+  
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>CPF</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr class="clickable" 
+               onclick="window.location='http://127.0.0.1:3000/inicio/detalhes'">
+        <td><%=@nomeArray[0]%></td>
+        <td><%=@idadeArray[0]%></td>
+        <td><%=@cpfArray[0]%></td>
+      </tr>
+      <tr class="clickable" 
+               onclick="window.location='http://127.0.0.1:3000/inicio/detalhes'">
+        <td><%=@nomeArray[1]%></td>
+        <td><%=@idadeArray[1]%></td>
+        <td><%=@cpfArray[1]%></td>
+      </tr>
+      <tr class="clickable" 
+               onclick="window.location='http://127.0.0.1:3000/inicio/detalhes'">
+        <td><%=@nomeArray[2]%></td>
+        <td><%=@idadeArray[2]%></td>
+        <td><%=@cpfArray[2]%></td>
+      <tr class="clickable" 
+               onclick="window.location='http://127.0.0.1:3000/inicio/detalhes'">
+       <td><%=@nomeArray[3]%></td>
+        <td><%=@idadeArray[3]%></td>
+        <td><%=@cpfArray[3]%></td>
+      <tr class="clickable" 
+               onclick="window.location='http://127.0.0.1:3000/inicio/detalhes'">
+       <td><%=@nomeArray[4]%></td>
+        <td><%=@idadeArray[4]%></td>
+        <td><%=@cpfArray[4]%></td>
+      <tr class="clickable" 
+               onclick="window.location='http://127.0.0.1:3000/inicio/detalhes'">
+       <td><%=@nomeArray[5]%></td>
+        <td><%=@idadeArray[5]%></td>
+        <td><%=@cpfArray[5]%></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
